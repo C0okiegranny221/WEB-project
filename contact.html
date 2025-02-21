@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessConnect - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <img src="logo.png" alt="WellnessConnect Logo">
+        <h2 style="color: #4c53af;">WellnessConnect</h2>
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="resources.html">Resources</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <a href="dashboard.html" class="btn-primary">Dashboard</a>
+</header>
+
+<section class="hero">
+    <h1>Contact Us</h1>
+    <p>Have questions? Get in touch with us today.</p>
+</section>
+
+<section class="container">
+    <h2>Reach Out to Us</h2>
+    <div class="box">
+        <p>Email: support@wellnessconnect.com</p>
+        <p>Phone: 9485637463</p>
+        <p>Address: XYZ CITY ABC STATE</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="submit_form.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="contact">Contact Number:</label></td>
+                    <td><input type="tel" id="contact" name="contact" required></td>
+                </tr>
+                <tr>
+                    <td><label for="query">Your Query:</label></td>
+                    <td><textarea id="query" name="query" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Subscribe to Newsletter:</td>
+                    <td>
+                        <input type="radio" id="yes" name="newsletter" value="Yes" required> Yes
+                        <input type="radio" id="no" name="newsletter" value="No" required> No
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="btn-primary">Send</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2025 WellnessConnect. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

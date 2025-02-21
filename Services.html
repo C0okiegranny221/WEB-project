@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessConnect - Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .service-box {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-box h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .service-box p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .coming-soon {
+            color: #ff9800;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="WellnessConnect Logo">
+            <h2 style="color: #4c53af;">WellnessConnect</h2>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="resources.html">Resources</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="dashboard.html" class="btn-primary">Dashboard</a>
+    </header>
+
+    <section class="hero">
+        <h1>Our Services</h1>
+        <p>Discover our upcoming mental health support services designed for you.</p>
+    </section>
+
+    <section class="services-container">
+        <div class="service-box">
+            <h2>AI Chatbot Assistance</h2>
+            <p>24/7 AI-powered support to provide mental health guidance and resources at your fingertips.</p>
+            <p class="coming-soon">Coming Soon!</p>
+        </div>
+        
+        <div class="service-box">
+            <h2>Anonymous User-to-User Chat</h2>
+            <p>Connect with others anonymously in a safe space to share experiences and support each other.</p>
+            <p class="coming-soon">Under Development!</p>
+        </div>
+        
+        <div class="service-box">
+            <h2>Confessional Corner</h2>
+            <p>Submit anonymous confessions and read others’ stories to feel heard and understood.</p>
+            <p class="coming-soon">Launching Soon!</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 WellnessConnect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

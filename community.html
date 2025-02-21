@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessConnect - Community</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch; /* Ensures all child elements stretch to the same height */
+}
+
+.image-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between; /* Distributes images evenly */
+}
+
+.image-gallery img {
+    width: 100%;
+    height: calc((100% - 30px) / 3); /* Ensures images divide equally with gaps */
+    object-fit: cover; /* Maintains aspect ratio and covers the area */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1; /* Makes each box stretch evenly */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="WellnessConnect Logo">
+            <h2 style="color: #4c53af;">WellnessConnect</h2>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="resources.html">Resources</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="dashboard.html" class="btn-primary">Dashboard</a>
+    </header>
+    
+    <section class="hero">
+        <h1>Our Community</h1>
+        <p>Join a supportive community that cares about your mental health journey.</p>
+    </section>
+
+    <section class="container">
+        <div class="image-gallery">
+            <img src="pic1.jpg" alt="Support Group">
+            <img src="pic2.jpg" alt="Forum Discussion">
+            <img src="pic3.jpg" alt="Community Event">
+        </div>
+        <div class="content">
+            <div class="box"><h2>Support Groups</h2><p>Participate in group discussions and share experiences.</p></div>
+            <div class="box"><h2>Forums</h2><p>Engage in meaningful conversations with like-minded individuals.</p></div>
+            <div class="box"><h2>Events</h2><p>Attend mental health seminars, webinars, and community events.</p></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 WellnessConnect. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://facebook.com/WellnessConnect" target="_blank">Facebook</a>
+            <a href="https://twitter.com/WellnessConnect" target="_blank">Twitter</a>
+            <a href="https://instagram.com/WellnessConnect" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

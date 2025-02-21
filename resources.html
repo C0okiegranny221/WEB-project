@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessConnect - Resources</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.box h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.box p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.dropdown-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+    background-color: #45a049;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.box:hover .dropdown-content {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="WellnessConnect Logo">
+            <h2 style="color: #4c53af;">WellnessConnect</h2>
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="resources.html">Resources</a>
+            <a href="community.html">Community</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="dashboard.html" class="btn-primary">Dashboard</a>
+    </header>
+    <section class="hero">
+        <h1>Resources</h1>
+        <p>Find mental health articles, tools, and guides to support your well-being.</p>
+    </section>
+    <section class="container">
+        <div class="box">
+            <h2>Articles</h2>
+            <p>Read expert articles on mental health topics.</p>
+            <button class="dropdown-btn">More</button>
+            <div class="dropdown-content">
+                <a href="https://www.psychologytoday.com/us" target="_blank">Psychology Today</a>
+                <a href="https://www.verywellmind.com" target="_blank">Verywell Mind</a>
+                <a href="https://www.nimh.nih.gov" target="_blank">NIMH Resources</a>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Tools</h2>
+            <p>Utilize mental health assessment and management tools.</p>
+            <button class="dropdown-btn">More</button>
+            <div class="dropdown-content">
+                <a href="https://moodfit.com" target="_blank">Moodfit</a>
+                <a href="https://www.headspace.com" target="_blank">Headspace</a>
+                <a href="https://www.calm.com" target="_blank">Calm</a>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Guides</h2>
+            <p>Follow step-by-step guides to improve your mental wellness.</p>
+            <button class="dropdown-btn">More</button>
+            <div class="dropdown-content">
+                <a href="https://www.mind.org.uk" target="_blank">Mind UK</a>
+                <a href="https://www.who.int/mental_health" target="_blank">WHO Mental Health</a>
+                <a href="https://www.helpguide.org" target="_blank">HelpGuide</a>
+            </div>
+        </div>
+    </section>
+    <div style="height: 180px;"></div>
+    <footer class="footer">
+        <p>© 2025 WellnessConnect. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
